@@ -25,17 +25,13 @@ module.exports = {
           platinum: "#E5E4E2",
           wolf: "#DBD7D2",
           isa: "#EEEEEB",
+          floral: "#FFFAF0",
         },
         pastel: {
-          100: "#ccd5ae",
-          200: "#e9edc9",
-          300: "#fefae0",
-          400: "#faedcd",
-          500: "#d4a373",
-          600: "#8093f1",
-          700: "#8093f1",
-          800: "#f7aef8",
-          900: "#b388eb"
+          400: "#ffdc5e",
+          500: "#ff600a",
+          600: "#90cf8e",
+          700: "#78c6f7",
         }
       }
     },

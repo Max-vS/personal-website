@@ -4,13 +4,7 @@ import Link from "next/link";
 import {useState} from "react";
 import {BeakerIcon} from '@heroicons/react/24/solid'
 import {dm_sans} from "@styles/fonts";
-import {Link as ScrollLink} from "react-scroll"
-
-const NavLink = ({ to, children }) => (
-    <ScrollLink to={to} smooth={true} duration={500} offset={-400} className="cursor-pointer hover:underline underline-offset-4 transition-all duration-500">
-        {children}
-    </ScrollLink>
-);
+import {NavLink} from "@components/NavLink";
 
 export const Header = () => {
     const [navOpen, setNavOpen] = useState(false);
@@ -23,8 +17,8 @@ export const Header = () => {
     return (
         <motion.header
             className={cx(
-                "fixed z-50 w-full px-8 duration-300 md:px-20 text-gray-900 py-12",
-                scrolled && !navOpen && "bg-secondary-isa/70 backdrop-blur-xl",
+                "fixed z-50 w-full px-8 duration-300 md:px-20 text-gray-900 py-8 2xl:py-12",
+                scrolled && !navOpen && "bg-secondary-powder/70 backdrop-blur-xl shadow-xl shadow-secondary-powder",
                 (!scrolled || navOpen)
             )}
         >

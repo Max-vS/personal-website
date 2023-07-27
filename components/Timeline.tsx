@@ -1,11 +1,12 @@
 import React from 'react';
+import {SkillCloud} from "@components/SkillCloud";
 
 export function Timeline(props) {
     return (
         <section {...props} className="flex flex-col container self-center m-auto items-center relative z-0 space-y-24 overflow-clip pb-12">
             <div className="absolute w-[3px] h-full bg-gray-100 overflow-hidden z-0">
                 <div className="absolute top-0 left-0 right-0 bottom-auto h-[80px] bg-gradient-to-b from-secondary-powder to-transparent" />
-                <div className="fixed w-[3px] top-0 h-1/2 bg-gradient-to-b from-pastel-600/70 to-pastel-900/70 z-[-1]" />
+                <div className="fixed w-[3px] top-0 h-1/2 bg-gradient-to-b from-pastel-700/70 to-pastel-600/70 z-[-1]" />
                 <div className="absolute top-auto left-0 right-0 bottom-0 h-[80px] bg-gradient-to-t from-secondary-powder to-transparent" />
             </div>
             {props.children}
@@ -13,7 +14,7 @@ export function Timeline(props) {
     );
 }
 
-export function TimelineItem({ date, title, text }) {
+export function TimelineItem({ date, title, text, skills = [] }) {
     return (
         <div className="grid grid-cols-timeline p-5 text-gray-900 gap-y-16">
             <div className="sticky top-1/2 justify-self-end text-3xl uppercase self-start">{date}</div>
@@ -22,12 +23,13 @@ export function TimelineItem({ date, title, text }) {
             </div>
             <div className="justify-self-start self-start">
                 <h2 className="text-3xl font-medium uppercase tracking-wide mb-2">{title}</h2>
-                {text.split("\n").map((x) => (
-                    <p key={x} className="text-lg text-gray-500">
+                {text.split("\n").map((x, i) => (
+                    <p key={i} className="text-lg text-gray-500">
                         {x}
                         <br />
                     </p>
                 ))}
+                <SkillCloud skills={skills} />
             </div>
         </div>
     );
