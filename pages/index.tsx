@@ -9,7 +9,7 @@ export default function Index() {
     return (
         <>
             <section
-                className="h-screen -z-10 flex items-center justify-center bg-secondary-powder text-5xl 2xl:text-6xl font-medium text-gray-900 text-center">
+                className="h-screen -z-10 flex items-center justify-center bg-secondary-powder text-3xl sm:text-5xl 2xl:text-6xl font-medium text-gray-900 text-center">
                 <div className="inline-block text-center">
                     <Typewriter options={{
                         autoStart: true,
@@ -39,7 +39,7 @@ export default function Index() {
                             .start();
                     }}/>
                     <ScrollLink to="about" smooth={true} duration={500} className="cursor-pointer absolute bottom-16 left-[50%] -translate-x-[50%]">
-                        <ChevronDownIcon className="animate-bounce h-12"/>
+                        <ChevronDownIcon className="animate-bounce h-10 md:h-12"/>
                     </ScrollLink>
                 </div>
             </section>

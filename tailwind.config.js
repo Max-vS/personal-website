@@ -9,6 +9,10 @@ module.exports = {
     extend: {
       gridTemplateColumns: {
         'timeline': '1fr 150px 1fr',
+        'timeline-lg': '20px 1fr',
+      },
+      gridTemplateRows: {
+        'timeline': 'auto 1fr',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

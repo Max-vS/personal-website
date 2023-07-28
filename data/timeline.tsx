@@ -1,5 +1,3 @@
-
-
 export const timelineData = [
     {
         date: "2018",
