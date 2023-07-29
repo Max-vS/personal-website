@@ -1,9 +1,11 @@
 import Section from "@components/Section";
 import {Timeline, TimelineItem} from "@components/Timeline";
 import {timelineData} from "../data/timeline";
+import {projectData} from '../data/projects';
 import {ChevronDownIcon} from '@heroicons/react/24/solid'
 import {Element, Link as ScrollLink} from 'react-scroll';
 import Typewriter from "typewriter-effect";
+import {Projects} from "@components/Projects";
 
 export default function Index() {
     return (
@@ -53,8 +55,11 @@ export default function Index() {
                 </Section>
             </Element>
             <Element name="projects">
-                <Section>
-                    <div className="h-96"/>
+                <Section className="flex items-center">
+                    <div className="pt-32">
+                        <h1 className="font-semibold text-3xl sm:text-4xl uppercase tracking-widest text-center mb-14">Projects</h1>
+                        <Projects projects={projectData} />
+                    </div>
                 </Section>
             </Element>
         </>
