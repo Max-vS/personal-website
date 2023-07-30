@@ -57,7 +57,7 @@ export default function Index() {
             <Element name="projects">
                 <Section className="flex items-center">
                     <div className="pt-32">
-                        <h1 className="font-semibold text-3xl sm:text-4xl uppercase tracking-widest text-center mb-14">Projects</h1>
+                        <h1 className="font-semibold text-3xl sm:text-4xl uppercase tracking-widest text-center mb-14 text-gray-900">Projects</h1>
                         <Projects projects={projectData} />
                     </div>
                 </Section>
