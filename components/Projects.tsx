@@ -9,7 +9,7 @@ interface ProjectItemProps extends ProjectData {}
 
 const ProjectItem: React.FC<ProjectItemProps> = ({title, text}) => {
     return (
-        <div className="rounded-lg p-5 text-gray-900 hover:bg-secondary-magnolia/50 transition-colors duration-300 ease-in-out">
+        <div className="rounded-lg p-5 text-gray-900 hover:bg-secondary-magnolia/50 transform-gpu transition-colors duration-200 ease-linear cursor-pointer">
             <h2 className="font-medium text-xl mb-2 uppercase tracking-wider">{title}</h2>
             <p className="text-gray-600">{text}</p>
         </div>

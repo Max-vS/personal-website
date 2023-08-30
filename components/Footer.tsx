@@ -10,12 +10,12 @@ export default function Footer() {
             <Section>
                 <ContactForm/>
                 <div className="flex flex-wrap items-center justify-center gap-6 mt-20">
-                    <div className="text-gray-900 transition-transform duration-200 flex gap-6">
+                    <div className="text-gray-900 flex gap-6 transform-gpu">
                         <Link href="https://www.linkedin.com/in/maxvonstorch/">
-                            <FontAwesomeIcon icon={ faLinkedin } size="2xl" className="hover:scale-105"/>
+                            <FontAwesomeIcon icon={ faLinkedin } size="2xl" className="hover:scale-105 transition-all duration-300"/>
                         </Link>
                         <Link href="https://github.com/Max-vS">
-                            <FontAwesomeIcon icon={ faGithub } size="2xl" className="hover:scale-105"/>
+                            <FontAwesomeIcon icon={ faGithub } size="2xl" className="hover:scale-105 transition-all duration-300"/>
                         </Link>
                     </div>
                     <h3 className="text-gray-900 text-md text-center">Copyright © 2023 Max von Storch. All rights reserved.</h3>
